@@ -9,7 +9,7 @@ public class ArrayIntList {
         this.size = 0;
     }
 
-    public ArrayIntList(int size) {
+    public ArrayIntList(int size) { // можно убрать
         this.elementData = new int[size];
         this.size = 0;
     }
@@ -19,7 +19,7 @@ public class ArrayIntList {
         size=a.length;
     }
 
-    public boolean add(int element) {
+    public boolean add(int element) { // можно убрать
         if (size == elementData.length) {
             return false;
         }

@@ -14,6 +14,8 @@ abstract class Shape {
     abstract double getArea();
 
     abstract double getPerimeter();
+
+
 }
 
 enum ShapeType {
@@ -40,6 +42,8 @@ class Circle extends Shape {
     double getPerimeter() {
         return (2 * Math.PI * radius);
     }
+
+
 }
 
 class Rectangle extends Shape {
@@ -81,5 +85,8 @@ class TestFactory {
         ShapeFactory factory = new ShapeFactory();
         Shape circle = factory.createShape(ShapeType.CIRCLE, 5,5,10,0);
         Shape rectangle = factory.createShape(ShapeType.RECTANGLE, 1,1,2,5);
+
+        System.out.println(circle.getArea() + "   " + circle.getPerimeter());
+        System.out.println(rectangle.getArea() + "   " + rectangle.getPerimeter());
     }
 }

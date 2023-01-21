@@ -47,6 +47,7 @@ public class BiletEquals {
         stack2.push(3);
         stack2.push(4);
         stack2.push(5);
+
         System.out.println(stack1);
         System.out.println(stack2);
         System.out.println(equals(stack1,stack2));

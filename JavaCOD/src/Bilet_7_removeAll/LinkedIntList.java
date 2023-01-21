@@ -89,7 +89,7 @@ public class LinkedIntList {
         }
     }
 
-    public void firstLast() {
+    public void firstLast() { // не нужен, можно удалить
         if (front != null) {
             ListNode prev = front;
             while (prev.next.next != null) {
@@ -119,6 +119,7 @@ class TestRemoveAll {
         list2.add(new ListNode(5));
         list1.printList();
         list2.printList();
+//        list2.removeAll(list1);
         list1.removeAll(list2);
         list1.printList();
         list2.printList();

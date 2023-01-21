@@ -46,7 +46,7 @@ public class LinkedIntList {
         System.out.println(cur.data + " ]");
     }
 
-    public void removeAll(LinkedIntList list) {
+    public void removeAll(LinkedIntList list) { // можно удалить
         if (this.front != null && list.front != null) {
             ListNode prev = null;
             ListNode current = this.front;
@@ -89,7 +89,7 @@ public class LinkedIntList {
         }
     }
 
-    public void firstLast() {
+    public void firstLast() { // можно удалить
         if (front != null) {
             ListNode prev = front;
             while (prev.next.next != null) {

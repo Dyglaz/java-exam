@@ -8,7 +8,7 @@ class ListNode {
         this.data = data;
     }
 
-    public ListNode(int data, ListNode next) {
+    public ListNode(int data, ListNode next) { // это тут
         this.data = data;
         this.next = next;
     }
@@ -63,7 +63,7 @@ public class LinkedIntList {
             ListNode temp = new ListNode(data);
             temp.next = head;
             head = temp;
-        }else{
+        } else {
             int i = 0;
             ListNode current = head;
             while (current.next != null && i+1 != index) {
@@ -71,12 +71,11 @@ public class LinkedIntList {
                 i++;
             }
             if (i+1 == index) {
-                current.next = new ListNode(data, current.next);
+                current.next = new ListNode(data, current.next); // соединяет с обеих сторон с помощью конструктора, где next!
             } else {
                 throw new IndexOutOfBoundsException();
             }
         }
-
     }
 }
 
