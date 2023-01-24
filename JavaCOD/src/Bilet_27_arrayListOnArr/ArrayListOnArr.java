@@ -61,5 +61,11 @@ public class ArrayListOnArr<T> {
         for (int i = 0; i < array.size(); i++) {
             System.out.print(array.get(i) + ", ");
         }
+        System.out.println();
+        System.out.println(array.get(2));
+        array.add(2, 6);
+        for (int i = 0; i < array.size(); i++) {
+            System.out.print(array.get(i) + ", ");
+        }
     }
 }
